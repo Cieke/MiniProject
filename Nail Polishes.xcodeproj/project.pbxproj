@@ -13,6 +13,12 @@
 		4D43E2C11DA62D56009D6E5D /* Nail_Polishes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D43E2BF1DA62D56009D6E5D /* Nail_Polishes.xcdatamodeld */; };
 		4D43E2C31DA62D56009D6E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D43E2C21DA62D56009D6E5D /* Assets.xcassets */; };
 		4D43E2C61DA62D56009D6E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D43E2C41DA62D56009D6E5D /* LaunchScreen.storyboard */; };
+		4DC3968C1DA6419A00D9AE79 /* Type+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC396861DA6419900D9AE79 /* Type+CoreDataClass.swift */; };
+		4DC3968D1DA6419A00D9AE79 /* Type+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC396871DA6419900D9AE79 /* Type+CoreDataProperties.swift */; };
+		4DC3968E1DA6419A00D9AE79 /* Polish+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC396881DA6419900D9AE79 /* Polish+CoreDataClass.swift */; };
+		4DC3968F1DA6419A00D9AE79 /* Polish+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC396891DA6419A00D9AE79 /* Polish+CoreDataProperties.swift */; };
+		4DC396901DA6419A00D9AE79 /* Tools+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3968A1DA6419A00D9AE79 /* Tools+CoreDataClass.swift */; };
+		4DC396911DA6419A00D9AE79 /* Tools+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3968B1DA6419A00D9AE79 /* Tools+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		4D43E2C21DA62D56009D6E5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D43E2C51DA62D56009D6E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D43E2C71DA62D56009D6E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DC396861DA6419900D9AE79 /* Type+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Type+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4DC396871DA6419900D9AE79 /* Type+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Type+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4DC396881DA6419900D9AE79 /* Polish+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Polish+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4DC396891DA6419A00D9AE79 /* Polish+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Polish+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4DC3968A1DA6419A00D9AE79 /* Tools+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tools+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4DC3968B1DA6419A00D9AE79 /* Tools+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tools+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +52,12 @@
 		4D43E2AC1DA62D55009D6E5D = {
 			isa = PBXGroup;
 			children = (
+				4DC396861DA6419900D9AE79 /* Type+CoreDataClass.swift */,
+				4DC396871DA6419900D9AE79 /* Type+CoreDataProperties.swift */,
+				4DC396881DA6419900D9AE79 /* Polish+CoreDataClass.swift */,
+				4DC396891DA6419A00D9AE79 /* Polish+CoreDataProperties.swift */,
+				4DC3968A1DA6419A00D9AE79 /* Tools+CoreDataClass.swift */,
+				4DC3968B1DA6419A00D9AE79 /* Tools+CoreDataProperties.swift */,
 				4D43E2B71DA62D55009D6E5D /* Nail Polishes */,
 				4D43E2B61DA62D55009D6E5D /* Products */,
 			);
@@ -139,8 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC3968D1DA6419A00D9AE79 /* Type+CoreDataProperties.swift in Sources */,
+				4DC396901DA6419A00D9AE79 /* Tools+CoreDataClass.swift in Sources */,
 				4D43E2BB1DA62D56009D6E5D /* ViewController.swift in Sources */,
+				4DC3968C1DA6419A00D9AE79 /* Type+CoreDataClass.swift in Sources */,
 				4D43E2C11DA62D56009D6E5D /* Nail_Polishes.xcdatamodeld in Sources */,
+				4DC3968F1DA6419A00D9AE79 /* Polish+CoreDataProperties.swift in Sources */,
+				4DC396911DA6419A00D9AE79 /* Tools+CoreDataProperties.swift in Sources */,
+				4DC3968E1DA6419A00D9AE79 /* Polish+CoreDataClass.swift in Sources */,
 				4D43E2B91DA62D55009D6E5D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Nail Polishes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Training.Nail-Polishes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -277,6 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Nail Polishes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Training.Nail-Polishes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -303,6 +329,7 @@
 				4D43E2CC1DA62D56009D6E5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
