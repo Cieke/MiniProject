@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NkX-jQ-iJr">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NkX-jQ-iJr">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -19,42 +19,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2G-qp-2l6">
-                                <frame key="frameInset" minX="16" minY="312" width="343" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.47155057222638264" blue="0.9648855185866998" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Go to my tools collection">
-                                    <color key="titleColor" red="0.206157645" green="0.20285030309999999" blue="0.20946498690000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Zsr-H5-Tve" kind="show" id="TWQ-jM-ZN5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ln-eJ-gsk">
-                                <frame key="frameInset" minX="16" minY="243" width="343" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.47155057220000002" blue="0.96488551860000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="images-2" translatesAutoresizingMaskIntoConstraints="NO" id="CFb-2n-udK"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ln-eJ-gsk">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Go to my polish collection">
-                                    <color key="titleColor" red="0.206157645" green="0.20285030309999999" blue="0.20946498690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.99175924059999998" green="0.60782039170000002" blue="0.72107291220000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="fmh-X8-Asq" kind="show" id="9wK-dV-t8o"/>
                                 </connections>
                             </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2G-qp-2l6">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <state key="normal" title="Go to my tools collection">
+                                    <color key="titleColor" red="0.99175924059999998" green="0.60782039170000002" blue="0.72107291220000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Zsr-H5-Tve" kind="show" id="TWQ-jM-ZN5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3ln-eJ-gsk" secondAttribute="bottom" constant="275" id="ac5-gZ-SJg"/>
-                            <constraint firstItem="U2G-qp-2l6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iE2-oN-q1a"/>
-                            <constraint firstItem="U2G-qp-2l6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="p4I-XY-yqn"/>
-                            <constraint firstItem="U2G-qp-2l6" firstAttribute="top" secondItem="3ln-eJ-gsk" secondAttribute="bottom" constant="39" id="sf5-QS-Acb"/>
-                            <constraint firstItem="U2G-qp-2l6" firstAttribute="trailing" secondItem="3ln-eJ-gsk" secondAttribute="trailing" id="wDp-pN-1Zn"/>
-                            <constraint firstItem="U2G-qp-2l6" firstAttribute="leading" secondItem="3ln-eJ-gsk" secondAttribute="leading" id="y6M-4h-VfO"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="CFb-2n-udK" secondAttribute="bottom" constant="-2" id="8v0-Xh-Ul4"/>
+                            <constraint firstItem="U2G-qp-2l6" firstAttribute="top" secondItem="3ln-eJ-gsk" secondAttribute="bottom" constant="27" id="aPn-aD-IZX"/>
+                            <constraint firstItem="3ln-eJ-gsk" firstAttribute="trailing" secondItem="U2G-qp-2l6" secondAttribute="trailing" id="abx-Bb-4jM"/>
+                            <constraint firstAttribute="trailing" secondItem="CFb-2n-udK" secondAttribute="trailing" id="cS3-Qb-2x0"/>
+                            <constraint firstItem="3ln-eJ-gsk" firstAttribute="centerX" secondItem="CFb-2n-udK" secondAttribute="centerX" id="hQd-kF-f6w"/>
+                            <constraint firstItem="3ln-eJ-gsk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kvt-TM-OiU"/>
+                            <constraint firstItem="3ln-eJ-gsk" firstAttribute="leading" secondItem="U2G-qp-2l6" secondAttribute="leading" id="mlF-RI-j1R"/>
+                            <constraint firstItem="CFb-2n-udK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="stp-5f-Rcv"/>
+                            <constraint firstItem="3ln-eJ-gsk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="vh8-9n-Dqc"/>
+                            <constraint firstItem="3ln-eJ-gsk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="y8x-cw-dTz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Polish App" id="QVZ-fn-iih"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1004" y="-56.221889055472268"/>
+            <point key="canvasLocation" x="1580" y="15.742128935532236"/>
         </scene>
         <!--My Polish App-->
         <scene sceneID="klS-sj-Hpc">
@@ -221,7 +225,7 @@
             <objects>
                 <navigationController title="My Polish App" automaticallyAdjustsScrollViewInsets="NO" id="NkX-jQ-iJr" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NBQ-GV-Zdx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NBQ-GV-Zdx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -232,7 +236,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HYI-4b-0eK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-54" y="-56"/>
+            <point key="canvasLocation" x="860" y="-6"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="images-2" width="184" height="274"/>
+    </resources>
 </document>
