@@ -19,6 +19,8 @@
 		4DC3968F1DA6419A00D9AE79 /* Polish+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC396891DA6419A00D9AE79 /* Polish+CoreDataProperties.swift */; };
 		4DC396901DA6419A00D9AE79 /* Tools+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3968A1DA6419A00D9AE79 /* Tools+CoreDataClass.swift */; };
 		4DC396911DA6419A00D9AE79 /* Tools+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3968B1DA6419A00D9AE79 /* Tools+CoreDataProperties.swift */; };
+		4DC8779C1DAB7FA0002D279D /* AddPolishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8779B1DAB7FA0002D279D /* AddPolishViewController.swift */; };
+		4DC877A21DAB8DFF002D279D /* PolishTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC877A11DAB8DFF002D279D /* PolishTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		4DC396891DA6419A00D9AE79 /* Polish+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Polish+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4DC3968A1DA6419A00D9AE79 /* Tools+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tools+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4DC3968B1DA6419A00D9AE79 /* Tools+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tools+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4DC8779B1DAB7FA0002D279D /* AddPolishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPolishViewController.swift; sourceTree = "<group>"; };
+		4DC877A11DAB8DFF002D279D /* PolishTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolishTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 				4D43E2B81DA62D55009D6E5D /* AppDelegate.swift */,
 				4D43E2BA1DA62D56009D6E5D /* ViewController.swift */,
 				4D43E2BC1DA62D56009D6E5D /* Main.storyboard */,
+				4DC8779B1DAB7FA0002D279D /* AddPolishViewController.swift */,
+				4DC877A11DAB8DFF002D279D /* PolishTableViewController.swift */,
 				4D43E2C21DA62D56009D6E5D /* Assets.xcassets */,
 				4D43E2C41DA62D56009D6E5D /* LaunchScreen.storyboard */,
 				4D43E2C71DA62D56009D6E5D /* Info.plist */,
@@ -160,12 +166,14 @@
 				4DC3968D1DA6419A00D9AE79 /* Type+CoreDataProperties.swift in Sources */,
 				4DC396901DA6419A00D9AE79 /* Tools+CoreDataClass.swift in Sources */,
 				4D43E2BB1DA62D56009D6E5D /* ViewController.swift in Sources */,
+				4DC877A21DAB8DFF002D279D /* PolishTableViewController.swift in Sources */,
 				4DC3968C1DA6419A00D9AE79 /* Type+CoreDataClass.swift in Sources */,
 				4D43E2C11DA62D56009D6E5D /* Nail_Polishes.xcdatamodeld in Sources */,
 				4DC3968F1DA6419A00D9AE79 /* Polish+CoreDataProperties.swift in Sources */,
 				4DC396911DA6419A00D9AE79 /* Tools+CoreDataProperties.swift in Sources */,
 				4DC3968E1DA6419A00D9AE79 /* Polish+CoreDataClass.swift in Sources */,
 				4D43E2B91DA62D55009D6E5D /* AppDelegate.swift in Sources */,
+				4DC8779C1DAB7FA0002D279D /* AddPolishViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

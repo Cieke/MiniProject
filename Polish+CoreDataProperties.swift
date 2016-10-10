@@ -16,9 +16,12 @@ extension Polish {
         return NSFetchRequest<Polish>(entityName: "Polish");
     }
 
-    @NSManaged public var brand: String?
-    @NSManaged public var color: String?
-    @NSManaged public var name: String?
-    @NSManaged public var type: String?
+    @NSManaged public var brand: String? // enum?
+    
+    @NSManaged public var polishName: String? // naam die het merk aan de kleur geeft was eerst gedeclareerd als name
+    @NSManaged public var color: String? // naam die je zelf geeft aan je kleur
+    @NSManaged public var reference: String?  // mag de key worden
+    
+    @NSManaged public var type: String? // stamping, glitter...
 
 }
