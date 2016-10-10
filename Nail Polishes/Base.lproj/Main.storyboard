@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NkX-jQ-iJr">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NkX-jQ-iJr">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -19,37 +19,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="images-2" translatesAutoresizingMaskIntoConstraints="NO" id="CFb-2n-udK"/>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ln-eJ-gsk">
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Go to my polish collection">
-                                    <color key="titleColor" red="0.99175924059999998" green="0.60782039170000002" blue="0.72107291220000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="fmh-X8-Asq" kind="show" id="9wK-dV-t8o"/>
-                                </connections>
-                            </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2G-qp-2l6">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="spilled-polish" translatesAutoresizingMaskIntoConstraints="NO" id="85E-Jx-l39">
+                                <frame key="frameInset" minY="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2G-qp-2l6">
+                                <frame key="frameInset" minX="16" minY="72" width="343" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <state key="normal" title="Go to my tools collection">
+                                <state key="normal" title="Go to my polish collection">
                                     <color key="titleColor" red="0.99175924059999998" green="0.60782039170000002" blue="0.72107291220000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="Zsr-H5-Tve" kind="show" id="TWQ-jM-ZN5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ln-eJ-gsk">
+                                <frame key="frameInset" minX="16" minY="110" width="343" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Go to my tools collection">
+                                    <color key="titleColor" red="0.99175924059999998" green="0.60782039170000002" blue="0.72107291220000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fmh-X8-Asq" kind="show" id="9wK-dV-t8o"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottomMargin" secondItem="CFb-2n-udK" secondAttribute="bottom" constant="-2" id="8v0-Xh-Ul4"/>
-                            <constraint firstItem="U2G-qp-2l6" firstAttribute="top" secondItem="3ln-eJ-gsk" secondAttribute="bottom" constant="27" id="aPn-aD-IZX"/>
+                            <constraint firstItem="U2G-qp-2l6" firstAttribute="top" secondItem="3ln-eJ-gsk" secondAttribute="bottom" constant="-68" id="aPn-aD-IZX"/>
                             <constraint firstItem="3ln-eJ-gsk" firstAttribute="trailing" secondItem="U2G-qp-2l6" secondAttribute="trailing" id="abx-Bb-4jM"/>
-                            <constraint firstAttribute="trailing" secondItem="CFb-2n-udK" secondAttribute="trailing" id="cS3-Qb-2x0"/>
-                            <constraint firstItem="3ln-eJ-gsk" firstAttribute="centerX" secondItem="CFb-2n-udK" secondAttribute="centerX" id="hQd-kF-f6w"/>
                             <constraint firstItem="3ln-eJ-gsk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kvt-TM-OiU"/>
                             <constraint firstItem="3ln-eJ-gsk" firstAttribute="leading" secondItem="U2G-qp-2l6" secondAttribute="leading" id="mlF-RI-j1R"/>
-                            <constraint firstItem="CFb-2n-udK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="stp-5f-Rcv"/>
                             <constraint firstItem="3ln-eJ-gsk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="vh8-9n-Dqc"/>
                             <constraint firstItem="3ln-eJ-gsk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="y8x-cw-dTz"/>
                         </constraints>
@@ -58,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1580" y="15.742128935532236"/>
+            <point key="canvasLocation" x="1412" y="-509.59520239880067"/>
         </scene>
         <!--My Polish App-->
         <scene sceneID="klS-sj-Hpc">
@@ -82,7 +83,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="My Polishes" id="37s-mz-Aar">
+                    <navigationItem key="navigationItem" title="My Tools Collection" id="37s-mz-Aar">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="CYi-Uu-ZQi">
                             <connections>
                                 <segue destination="NQP-St-8sY" kind="show" id="MjQ-bE-cNh"/>
@@ -92,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZQc-4h-Apk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2269.5999999999999" y="-548.27586206896558"/>
+            <point key="canvasLocation" x="2284" y="-132"/>
         </scene>
         <!--Add a Polish-->
         <scene sceneID="wSh-t4-bFM">
@@ -165,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R4h-zm-47K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3080.8000000000002" y="-545.57721139430294"/>
+            <point key="canvasLocation" x="3094" y="-133"/>
         </scene>
         <!--My Polish App-->
         <scene sceneID="lvv-3e-FbP">
@@ -190,7 +191,7 @@
                             <outlet property="delegate" destination="Zsr-H5-Tve" id="Rdp-To-LGt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Nailart Tools" id="z6e-vW-6c5">
+                    <navigationItem key="navigationItem" title="My Polish Collection" id="z6e-vW-6c5">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="shM-qJ-DdE">
                             <connections>
                                 <segue destination="vjx-T6-QXC" kind="presentation" id="wRh-8I-ItJ"/>
@@ -200,7 +201,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pGu-wf-YKD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2270" y="142"/>
+            <point key="canvasLocation" x="2284" y="-806"/>
         </scene>
         <!--test-->
         <scene sceneID="mjc-dI-Lbp">
@@ -218,14 +219,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKN-5g-SYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3084" y="144"/>
+            <point key="canvasLocation" x="3094" y="-806"/>
         </scene>
         <!--My Polish App-->
         <scene sceneID="xKl-qP-32k">
             <objects>
                 <navigationController title="My Polish App" automaticallyAdjustsScrollViewInsets="NO" id="NkX-jQ-iJr" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NBQ-GV-Zdx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NBQ-GV-Zdx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -236,10 +237,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HYI-4b-0eK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="-6"/>
+            <point key="canvasLocation" x="556" y="-510"/>
         </scene>
     </scenes>
     <resources>
-        <image name="images-2" width="184" height="274"/>
+        <image name="spilled-polish" width="183" height="275"/>
     </resources>
 </document>
