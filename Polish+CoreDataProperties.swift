@@ -2,7 +2,7 @@
 //  Polish+CoreDataProperties.swift
 //  Nail Polishes
 //
-//  Created by Tywin Lannister on 06/10/16.
+//  Created by Tywin Lannister on 10/10/16.
 //  Copyright © 2016 Training. All rights reserved.
 //
 
@@ -16,12 +16,10 @@ extension Polish {
         return NSFetchRequest<Polish>(entityName: "Polish");
     }
 
-    @NSManaged public var brand: String? // enum?
-    
-    @NSManaged public var polishName: String? // naam die het merk aan de kleur geeft was eerst gedeclareerd als name
-    @NSManaged public var color: String? // naam die je zelf geeft aan je kleur
-    @NSManaged public var reference: String?  // mag de key worden
-    
-    @NSManaged public var type: String? // stamping, glitter...
+    @NSManaged public var color: String?
+    @NSManaged public var polishName: String?
+    @NSManaged public var type: String?
+    @NSManaged public var reference: String?
+    @NSManaged public var brand: Brand?
 
 }

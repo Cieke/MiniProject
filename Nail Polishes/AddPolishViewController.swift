@@ -9,13 +9,21 @@
 import UIKit
 import CoreData
 
-class AddPolishViewController: UIViewController {
+class AddPolishViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     
     @IBOutlet weak var titleField: UITextField!
     
-    var context:NSManagedObjectContext!
+    @IBOutlet weak var brandField: UITextField!
     
+    @IBOutlet weak var colorField: UITextField!
+    
+    @IBOutlet weak var refField: UITextField!
+    
+    @IBOutlet weak var imagePicked: UIImageView!
+    
+    
+    var context:NSManagedObjectContext!
     
     
     override func viewDidLoad() {
@@ -44,10 +52,22 @@ class AddPolishViewController: UIViewController {
     }
     */
 
+    @IBAction func openPhotoLibraryButton(_ sender: UIButton) {
+               
+        
+    }
     @IBAction func save(_ sender: UIBarButtonItem) {
         
         let polish  = NSEntityDescription.insertNewObject(forEntityName : "Polish", into: context) as! Polish
+        
+        let brand = NSEntityDescription.insertNewObject(forEntityName: "Brand", into: context) as! Brand
+        
+        
+        
         polish.polishName = titleField.text
+        brand.brandName = brandField.text
+        polish.color = colorField.text
+        polish.reference = refField.text
         
         do{
             try context.save()

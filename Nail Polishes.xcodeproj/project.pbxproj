@@ -21,6 +21,8 @@
 		4DC396911DA6419A00D9AE79 /* Tools+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3968B1DA6419A00D9AE79 /* Tools+CoreDataProperties.swift */; };
 		4DC8779C1DAB7FA0002D279D /* AddPolishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8779B1DAB7FA0002D279D /* AddPolishViewController.swift */; };
 		4DC877A21DAB8DFF002D279D /* PolishTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC877A11DAB8DFF002D279D /* PolishTableViewController.swift */; };
+		4DC877A51DABADDD002D279D /* Brand+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC877A31DABADDD002D279D /* Brand+CoreDataClass.swift */; };
+		4DC877A61DABADDD002D279D /* Brand+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC877A41DABADDD002D279D /* Brand+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		4DC3968B1DA6419A00D9AE79 /* Tools+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tools+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4DC8779B1DAB7FA0002D279D /* AddPolishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPolishViewController.swift; sourceTree = "<group>"; };
 		4DC877A11DAB8DFF002D279D /* PolishTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolishTableViewController.swift; sourceTree = "<group>"; };
+		4DC877A31DABADDD002D279D /* Brand+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Brand+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4DC877A41DABADDD002D279D /* Brand+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Brand+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		4D43E2AC1DA62D55009D6E5D = {
 			isa = PBXGroup;
 			children = (
+				4DC877A31DABADDD002D279D /* Brand+CoreDataClass.swift */,
+				4DC877A41DABADDD002D279D /* Brand+CoreDataProperties.swift */,
 				4DC396861DA6419900D9AE79 /* Type+CoreDataClass.swift */,
 				4DC396871DA6419900D9AE79 /* Type+CoreDataProperties.swift */,
 				4DC396881DA6419900D9AE79 /* Polish+CoreDataClass.swift */,
@@ -170,6 +176,8 @@
 				4DC3968C1DA6419A00D9AE79 /* Type+CoreDataClass.swift in Sources */,
 				4D43E2C11DA62D56009D6E5D /* Nail_Polishes.xcdatamodeld in Sources */,
 				4DC3968F1DA6419A00D9AE79 /* Polish+CoreDataProperties.swift in Sources */,
+				4DC877A51DABADDD002D279D /* Brand+CoreDataClass.swift in Sources */,
+				4DC877A61DABADDD002D279D /* Brand+CoreDataProperties.swift in Sources */,
 				4DC396911DA6419A00D9AE79 /* Tools+CoreDataProperties.swift in Sources */,
 				4DC3968E1DA6419A00D9AE79 /* Polish+CoreDataClass.swift in Sources */,
 				4D43E2B91DA62D55009D6E5D /* AppDelegate.swift in Sources */,

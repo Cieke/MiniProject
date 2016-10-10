@@ -13,6 +13,8 @@ class PolishTableViewController: UITableViewController {
     
     
     var polishes = [Polish]()
+    var brands = [Brand]()
+   
     var context:NSManagedObjectContext!
     
     
@@ -36,6 +38,7 @@ class PolishTableViewController: UITableViewController {
         super.viewDidAppear(animated)
         
         fetchPolishes()
+//        fetchBrands()
     }
     
     func fetchPolishes(){
@@ -58,6 +61,25 @@ class PolishTableViewController: UITableViewController {
         
         
     }
+    
+//    func fetchBrands(){
+//        let request: NSFetchRequest<Brand> = Brand.fetchRequest()
+//        
+//        let sort = NSSortDescriptor(key: "brandName", ascending: true)
+//        
+//        request.sortDescriptors = [sort]
+//        
+//        let asyncRequest = NSAsynchronousFetchResult<Brand>(fetchRequest: request) { (result) in
+//            self.brands = result.finalResult ?? []
+//            self.tableView.reloadData()
+//        }
+//        
+//        do{
+//            try context.execute(asyncRequest)
+//        }catch let error {
+//            print(error)
+//        }
+//    }
     
 
     override func didReceiveMemoryWarning() {
@@ -82,10 +104,25 @@ class PolishTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "polishCell", for: indexPath)
 
         let polish = polishes[indexPath.row]
-      
         
-        cell.textLabel?.text = polish.polishName
-
+        let brandNameLabel = cell.viewWithTag(1) as! UILabel
+        brandNameLabel.text = polish.brand?.brandName
+        
+        let polishNameLabel = cell.viewWithTag(2) as! UILabel
+        polishNameLabel.text = polish.polishName
+        
+        let polishColorLabel = cell.viewWithTag(3) as! UILabel
+        polishColorLabel.text = polish.color
+        
+        let polishRefLabel = cell.viewWithTag(4) as!UILabel
+        polishRefLabel.text = polish.reference
+     
+        
+        
+        
+        //   cell.textLabel?.text = polish.polishName
+       // cell.detailTextLabel?.text = "brand" //polish.brand?.brandName
+       // cell.detailTextLabel?.text = polish.color
         return cell
     }
     
